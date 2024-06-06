@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz">
+    <meta name="keywords" content="quiz, questions">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div id="container">
+        <header id="intro-header">
+            <h3>Welcome to...</h3>
+            <h1><i class="fa-solid fa-clipboard-question"></i> Quiz</h1>
+        </header>
+
+        <div id="intro-text">
+            <p>Try to get 10 out of 10! <strong>Enter a username</strong> to get started.
+            </p>
+        </div>
+
+        <div id="start-quiz">
+            <form action="game.html">
+                <div id="form-control">
+                    <label for="username">Enter Username: </label>
+                    <input type="text" id="username" name="username"/>
+                </div>
+                <div id="start-button">
+                    <!-- <button id="go">Start Quiz!</button> -->
+                    <button type="submit" id="go">Start Quiz!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- script to forward entered username to next page -->
+    <script>
+        let startButton = document.getElementById('go');
+        let theUsername = document.getElementById("username");
+        theUsername.focus();
+
+        theUsername.addEventListener('keydown', function () {
+            if (event.key === 'Enter') {
+                let uName = document.getElementById('username').value;
+                localStorage.setItem('name', uName);
+            }
+        });
+
+        startButton.addEventListener('click', function () {
+            let uName = document.getElementById('username').value;
+            localStorage.setItem('name', uName);
+        });
+    </script>
+
+</body>
+
+</html>

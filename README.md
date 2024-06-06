@@ -93,11 +93,6 @@ The modal window appears identically to the large screen versions, with the resu
 ## User Testing
 The quiz app website was tested by another person and they found it a pleasant user experience, reporting no usability issues and found it an easy user journey through the game. They reported the question buttons being clearly available to click when they wanted to answer, and quickly found the "Get Result" button when the 10th question was answered.
 
-### Input Validation
-On the intro page, the input box where the user enters their chosen username is required so that the game can commence. A message appears as follows using HTML5 validation, prompting the user for a username if the button is clicked with an empty text box:
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/InputValidation.png">
-
 ### Button Enabling/Disabling
 In order to effectively control the game functions, certain buttons have to be enabled or disabled depending on user interaction. When a question has been loaded, the "next question" button is disabled until the user has clicked an answer. When an answer is clicked the "next question" button is re-enabled, but the question buttons are disabled to disallow the user from having a second chance to answer the question. This process is repeated for all 10 questions.
 

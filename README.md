@@ -1,12 +1,12 @@
 # Quiz - Project 2
 
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Screenshot.png">
+<img src="">
 
 This is a browser based quiz game constructed with JavaScript, CSS3 and HTML5. It allows the user to answer 10 randomly chosen questions and obtain their score at the end of the quiz, and receive a report on what questions they answered incorrectly. The game is targeted towards a broad section of people who are interested in general knowledge quizzes.
 
 The main aim of this project is to construct a visually appealing, responsive and accessible browser game that ticks all the boxes of a modern user experience, and display how such an application can be constructed using JavaScript.
 
-[Live link to website](https://kevinjohnkiely.github.io/quick-quiz-project-2/)
+[Live link to website]()
 
 <hr>
 
@@ -16,8 +16,6 @@ The main aim of this project is to construct a visually appealing, responsive an
 ## User Story
 The main user journey through this game is identical for all users - The user visits the intro or landing page, quickly reads the introductory instructions and enters their username to begin the quiz. The user then loops through each question, and receives visual feedback after clicking on their answer as to whether they answered correctly or not. On completing the 10 questions, a pop window is displayed showing their final score and a report showing the questions, the correct answer and a visual indicator of which questions were answered correctly.
 
-## Wireframes
-The following images show wireframes of each of the 3 pages of the site. These wireframes were created using [Balsamiq Wireframes](https://balsamiq.com/).
 
 ### Intro Page
 This is a wireframe showing the intended design layout for the landing/intro page of the game app.

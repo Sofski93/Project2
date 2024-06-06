@@ -1,112 +1,207 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quiz - Project 2
 
-Welcome Sofie Olofsson,
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Screenshot.png">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is a browser based quiz game constructed with JavaScript, CSS3 and HTML5. It allows the user to answer 10 randomly chosen questions and obtain their score at the end of the quiz, and receive a report on what questions they answered incorrectly. The game is targeted towards a broad section of people who are interested in general knowledge quizzes.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **April 26, 2024**
+The main aim of this project is to construct a visually appealing, responsive and accessible browser game that ticks all the boxes of a modern user experience, and display how such an application can be constructed using JavaScript.
 
-## Gitpod Reminders
+[Live link to website](https://kevinjohnkiely.github.io/quick-quiz-project-2/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<hr>
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+# UX (User Experience)
 
-Another blue button should appear to click: _Open Browser_.
+## User Story
+The main user journey through this game is identical for all users - The user visits the intro or landing page, quickly reads the introductory instructions and enters their username to begin the quiz. The user then loops through each question, and receives visual feedback after clicking on their answer as to whether they answered correctly or not. On completing the 10 questions, a pop window is displayed showing their final score and a report showing the questions, the correct answer and a visual indicator of which questions were answered correctly.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Wireframes
+The following images show wireframes of each of the 3 pages of the site. These wireframes were created using [Balsamiq Wireframes](https://balsamiq.com/).
 
-A blue button should appear to click: _Make Public_,
+### Intro Page
+This is a wireframe showing the intended design layout for the landing/intro page of the game app.
 
-Another blue button should appear to click: _Open Browser_.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Intro%20Page.png">
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Game Page
+This wireframe shows the intended design layout for the main game page of the quiz.
 
-To log into the Heroku toolbelt CLI:
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Game%20Page.png">
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Result Pop-up Window
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+This wireframe is a mockup of the result modal popup window that appears after the user has answered the 10 questions.
 
-------
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Result%20Page.png">
 
-## Release History
+[Back to Table of Contents](https://github.com/kevinjohnkiely/quick-quiz-project-2#table-of-contents)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<hr>
 
-**April 26 2024:** Update node version to 16
+# Features
 
-**September 20 2023:** Update Python version to 3.9.17.
+## The Intro Page
+This is the landing page that first appears when the user loads the website. Some introductory text appears and also a text box underneath that allows the user to enter a username to continue the game, as a personal touch to keep the user engaged. Some form validation is added here to ensure that the user enters a username.
+The username is saved in the web browser using JavaScript local storage, so it can be retrieved later by the next page. The small amount of code needed to achieve this is added inline in script tags on this page.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Intro.png">
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Clicking on the Start Quiz button will load the main game page which follows at game.html
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## The Game Page
+This is the main page of the game that holds all relevant HTML structure and linked JavaScript code that operates the game functionality. The page is composed of the following elements:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### The Header
+This appears at the top of the page and has the game name and logo on the left, and on the right the user's entered username appears, welcoming them to the game.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/Header.png">
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### The Game Panel
+This panel displays the questions for the quiz and what number that question is out of the total of 10. The 4 possible answers are displayed as buttons underneath, and as shown in the below image, clicking on a button displays the correct answer in green and all other answers in red. After answering, all buttons will be disabled so that the user can't re-answer the question, but the "Next Question" button remains to allow the user to continue.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GamePanel.png">
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Game Controls
+This section holds the 2 game control buttons, a button to restart the game and one to continue onto the next question. The user continues looping through the questions in this format, until the 10th question. After the final question has been answered, the "Next Question" button changes to a "Get Result" button and clicking on this forwards the user to a "Quiz Report" pop-up window.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GameControls.png">
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## The Quiz Result Popup Window
+This window shows the final score achieved, and a breakdown of the correct and incorrect answers. The user has the option of clicking the "Play Again" button to try another quiz.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/ResultModal.png">
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+[Back to Table of Contents](https://github.com/kevinjohnkiely/quick-quiz-project-2#table-of-contents)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<hr>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+# Technologies Used
+The following is a list of the various technologies employed to build this project
++ HTML5 - Hypertext markup language used to give the website its overall structure and semantic value.
++ CSS3 - Cascading Style Sheets used to apply consistent styles across all sections of the application.
++ Google Fonts - Font is embedded into the website by way of importing the correct google font link into the linked CSS file.
++ Font Awesome - Fontawesome toolkit imported into HTML files and its icons used to show button icons and logo.
++ Git, Github & Gitpod - Used to continuously develop and deploy the incremental versions of the application.
++ Balsamiq Wireframes - Downloadable software to create the wireframe mockups.
++ GIMP - GNU Image Manipulation Program, used to resize, crop & optimise the image content for embedding on this document.
++ Local Storage - A JavaScript utility that allows key-value pairs of data to be stored for later use in a web browser.
++ OpenTrivia Database - A web API supplying quiz questions in JSON format.
 
-------
+[Back to Table of Contents](https://github.com/kevinjohnkiely/quick-quiz-project-2#table-of-contents)
 
-## FAQ about the uptime script
+<hr>
 
-**Why have you added this script?**
+# Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Cross-Browser Testing
+The application was functionally tested across the 3 web browsers, Google Chrome, Microsoft Edge & Mozilla Firefox. The site loaded consistently across all 3 and no issues were detected on any browser.
 
-**How will this affect me?**
+## Compatibility Testing
+I tested the site across different devices, such as the Nokia 4.2 smartphone with Android 11, Lenovo Ideapad 3 laptop with different browsers on Windows 11, and on a Dell Studio laptop with different browsers on a Linux Mint operating system. No issues were reported between these devices.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Responsiveness Testing
+During development of this application, I regularly tested the responsiveness of the site using Google Chrome's Developer tools. In my CSS media query rules, I used 2 separate breakpoints to design the site for different screen sizes.
++ 800px width and below (medium screen size)
++ 600px width and below (small screen size)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+### The Intro Page
+The intro page was laid out using full width divs and containers, so the app displays identically across all screen sizes, the only difference being the paddings adjusted and also the label and input box stack on top of each other.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/IntroResponsive.png">
 
-**So….?**
+### Game Page - Header
+The header section of the game page changes from a 2 column layout to 1 column on smaller screens, the name and logo stacking on top of the welcome username text.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/HeaderResponsive.png">
 
-**Can I opt out?**
+### Game Page - Question Panel
+The game panel section changes from a 4 column layout to just 1 column on the smaller screen sizes, the question boxes stacking on top of each other, with some necessary padding/margin/font-size adjustments to suit the viewport.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GamePanelResponsive.png">
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Game Page - Game Controls
+Similar to the previous sections the game controls change from multiple columns to a one column layout on smaller devices. Also, the order of the buttons are reversed, to give a better user experience it was decided that the "Next Question" button should appear above the "Restart" option.
 
-**Anything more?**
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GameControlsResponsive.png">
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### The Quiz Result Popup Window
+The modal window appears identically to the large screen versions, with the results in a table format. Some scrolling had to be undertaken to see all results and access the "New Game" button, but this was unavoidable due to the amount of information needed to be displayed on the modal.
 
----
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/ResultModalResponsive.png">
 
-Happy coding!
+## User Testing
+The quiz app website was tested by another person and they found it a pleasant user experience, reporting no usability issues and found it an easy user journey through the game. They reported the question buttons being clearly available to click when they wanted to answer, and quickly found the "Get Result" button when the 10th question was answered.
+
+### Input Validation
+On the intro page, the input box where the user enters their chosen username is required so that the game can commence. A message appears as follows using HTML5 validation, prompting the user for a username if the button is clicked with an empty text box:
+
+<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/InputValidation.png">
+
+### Button Enabling/Disabling
+In order to effectively control the game functions, certain buttons have to be enabled or disabled depending on user interaction. When a question has been loaded, the "next question" button is disabled until the user has clicked an answer. When an answer is clicked the "next question" button is re-enabled, but the question buttons are disabled to disallow the user from having a second chance to answer the question. This process is repeated for all 10 questions.
+
+## Validator Testing
+The HTML of the website was tested using the validator at https://validator.w3.org/. The following bug was discovered:
++ Section content with no Heading(h1 - h6) markup. Advised to change section semantic tags to div tags, as the section elements were just effectively placeholders for other content and did not require heading tags.
+
+All of these errors were corrected and now the application passes the validator.
+
+The CSS was tested using the validator at https://jigsaw.w3.org/css-validator/ and no errors were reported.
+
+## Performance Testing
+I tested the game's web page performance using Lighthouse in Google Chrome Developer Tools. I was pleased with the results which ranged from 92 to 100. Results are seen below:
+
+<img src="">
+
+## Errors, Bugs or Issues During Development
+
+
+# Considerations for Improvements or Enhancements
+
+There are a number of potential improvements for this application which I began to consider during development:
+
++ Allow the user to select a number of questions other than 10, and also perhaps select their own category of questions. This would be achieved by adding extra input boxes or drop down menus on the intro page. Currently, the parameters are hard-coded into the JavaScript with 10 questions picked from the General Knowledge category.
+
++ At present there is a very basic data persistence method with Local Storage being used to store the username, but this could be expanded greatly in future by storing more user details in a backend database, and also keep a record of that users scores and how they rank against other users. It would allow popup messages such as "You beat your best score!" to appear on completion of the quiz. This would be a realistic enhancement to the application, making it more of a full-stack project in the process.
+
++ The use of CSS animations throughout the app may have given a better user experience, but time constraints prevented this. For example, when a user tries to click the answer buttons on a question already answered, the button would jump and shake, rather than just be disabled as it is at present. This would just further reinforce the rules of the game and what the user is allowed to do.
+
+[Back to Table of Contents](https://github.com/kevinjohnkiely/quick-quiz-project-2#table-of-contents)
+
+<hr>
+
+# Deployment
+
+## The steps undertaken to deploy this website to Github Pages is as follows:
+
+1. I accessed the Code Institute template at [https://github.com/Code-Institute-Org/gitpod-full-template] and clicked on the "Use This Template" button.
+2. The next step was to give my repository a suitable name on Github, and create it thereafter.
+3. On the following page I clicked on the green Gitpod button, which is accessible having installed the Gitpod extension to Google Chrome browser.
+4. This created my development environment on Gitpod where I began to push the incremental changes to the live hosted site.
+5. To create the hosted site at Github Pages, I navigated to the Github repo settings tab and found the Github pages dedicated section.
+6. From there in the Source dropdown menu I clicked on "main", and then "Save", from which I was supplied a live link that would be ready in a few minutes. Live link is available here [https://kevinjohnkiely.github.io/quick-quiz-project-2/]
+
+
+# Credits
+
+## Code
+
++ The code for the modal popup window came from W3CSchools website tutorial, with modifications to suit my application. The tutorial is linked here [https://www.w3schools.com/howto/howto_css_modals.asp]
++ The code to import the questions by way of an API call came from the OpenTrivia Database API website, with the selected parameters available to modify at this link: [https://opentdb.com/api_config.php]
+
+All other HTML, CSS and JavaScript was composed by myself.
+
+## Fonts
+
+I used just one font throughout this application, which I linked into the CSS file as an import, the "Montserrat Font" which came from Google Fonts. [https://fonts.google.com/specimen/Montserrat]
+
+## Colours
+
+I adopted a basic 2-colour scheme for this application, using a gradient background to give a bright, cheerful feel for the quiz. The colours were a yellow and a green, with both colours being used throughout the app as button colours also. There is also a darker green used for button rollovers and some text headings.
+
+Colours and Hexadecimal Codes are:
+
++ Yellow #FFFF00
++ Green #04AA6D
++ Dark Green #026B44

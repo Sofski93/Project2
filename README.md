@@ -1,18 +1,19 @@
 # Quiz - Project 2
 
-<img src="">
+<img src="assets/pictures/print sc.png">
 
-This is a browser based quiz game constructed with JavaScript, CSS3 and HTML5. It allows the user to answer 10 randomly chosen questions and obtain their score at the end of the quiz, and receive a report on what questions they answered incorrectly. The game is targeted towards a broad section of people who are interested in general knowledge quizzes.
+This is a browser-based quiz game constructed using JavaScript, CSS3 and HTML5. It allows the user to answer 10 randomly selected questions and get their score at the end of the quiz, and get a report on which questions they answered incorrectly. This quiz game can be played by everyone
 
 The main aim of this project is to construct a visually appealing, responsive and accessible browser game that ticks all the boxes of a modern user experience, and display how such an application can be constructed using JavaScript.
 
-[Live link to website]()
+[Live link to website](https://sofski93.github.io/Project2/index.html)
 
 # Features
 
 ## The Intro Page
+
 This is the landing page that first appears when the user loads the website. Some introductory text appears and also a text box underneath that allows the user to enter a username to continue the game, as a personal touch to keep the user engaged. Some form validation is added here to ensure that the user enters a username.
-The username is saved in the web browser using JavaScript local storage, so it can be retrieved later by the next page. The small amount of code needed to achieve this is added inline in script tags on this page.
+The username is saved in the web browser using JavaScript local storage, so it can be retrieved later by the next page.
 
 <img src="">
 

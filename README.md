@@ -25,10 +25,11 @@ This is the main page of the game that holds all relevant HTML structure and lin
 ### The Header
 This appears at the top of the page and has the game name and logo on the left, and on the right the user's entered username appears, welcoming them to the game.
 
-<img src="">
+<img src="https://github.com/Sofski93/Project2/blob/main/assets/pictures/Header.png">
 
 ### The Game Panel
-This panel displays the questions for the quiz and what number that question is out of the total of 10. The 4 possible answers are displayed as buttons underneath, and as shown in the below image, clicking on a button displays the correct answer in green and all other answers in red. After answering, all buttons will be disabled so that the user can't re-answer the question, but the "Next Question" button remains to allow the user to continue.
+
+This panel shows the questions for the quiz and there are 10 questions. You can choose between 4 different answers, when you press the answer you think it is right or wrong, with the correct green and all the parts in red. Then you press the next question.
 
 <img src="">
 

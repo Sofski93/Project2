@@ -77,7 +77,7 @@ I tested the game's web page performance using Lighthouse in Google Chrome Devel
 3. On the following page I clicked on the green Gitpod button, which is accessible having installed the Gitpod extension to Google Chrome browser.
 4. This created my development environment on Gitpod where I began to push the incremental changes to the live hosted site.
 5. To create the hosted site at Github Pages, I navigated to the Github repo settings tab and found the Github pages dedicated section.
-6. From there in the Source dropdown menu I clicked on "main", and then "Save", from which I was supplied a live link that would be ready in a few minutes. Live link is available here
+6. From there in the Source dropdown menu I clicked on "main", and then "Save", from which I was supplied a live link that would be ready in a few minutes. Live link is available here https://github.com/Sofski93/Project2/tree/main
 
 
 # Credits

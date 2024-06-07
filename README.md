@@ -72,7 +72,7 @@ The CSS was tested using the validator at https://jigsaw.w3.org/css-validator/ a
 ## Performance Testing
 I tested the game's web page performance using Lighthouse in Google Chrome Developer Tools. Results are seen below:
 
-<img src="">
+<img src="https://github.com/Sofski93/Project2/blob/main/assets/pictures/lighthouse.png">
 
 
 # Deployment

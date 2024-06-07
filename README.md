@@ -43,11 +43,7 @@ The following is a list of the various technologies employed to build this proje
 + HTML5 - Hypertext markup language used to give the website its overall structure and semantic value.
 + CSS3 - Cascading Style Sheets used to apply consistent styles across all sections of the application.
 + Google Fonts - Font is embedded into the website by way of importing the correct google font link into the linked CSS file.
-+ Font Awesome - Fontawesome toolkit imported into HTML files and its icons used to show button icons and logo.
 + Git, Github & Gitpod - Used to continuously develop and deploy the incremental versions of the application.
-+ Balsamiq Wireframes - Downloadable software to create the wireframe mockups.
-+ GIMP - GNU Image Manipulation Program, used to resize, crop & optimise the image content for embedding on this document.
-+ Local Storage - A JavaScript utility that allows key-value pairs of data to be stored for later use in a web browser.
 + OpenTrivia Database - A web API supplying quiz questions in JSON format.
 
 # Testing
@@ -60,9 +56,6 @@ The application was functionally tested across the 3 web browsers, Google Chrome
 During development of this application, I regularly tested the responsiveness of the site using Google Chrome's Developer tools. In my CSS media query rules, I used 2 separate breakpoints to design the site for different screen sizes.
 + 800px width and below (medium screen size)
 + 600px width and below (small screen size)
-
-### Button Enabling/Disabling
-In order to effectively control the game functions, certain buttons have to be enabled or disabled depending on user interaction. When a question has been loaded, the "next question" button is disabled until the user has clicked an answer. When an answer is clicked the "next question" button is re-enabled, but the question buttons are disabled to disallow the user from having a second chance to answer the question. This process is repeated for all 10 questions.
 
 ## Validator Testing
 The HTML of the website was tested using the validator at https://validator.w3.org/. No errors were reported.
@@ -107,4 +100,4 @@ Colours and Hexadecimal Codes are:
 + White #FFFFFF
 + Green #04AA6D
 + Dark Green #026B44
-+ Blue 
++ Blue #240ea1

@@ -31,18 +31,12 @@ This appears at the top of the page and has the game name and logo on the left, 
 
 This panel shows the questions for the quiz and there are 10 questions. You can choose between 4 different answers, when you press the answer you think it is right or wrong, with the correct green and all the parts in red. Then you press the next question.
 
-<img src="">
+<img src="https://github.com/Sofski93/Project2/blob/main/assets/pictures/Namnl%C3%B6s.png">
 
 ### Game Controls
 This section holds the 2 game control buttons, a button to restart the game and one to continue onto the next question. The user continues looping through the questions in this format, until the 10th question. After the final question has been answered, the "Next Question" button changes to a "Get Result" button and clicking on this forwards the user to a "Quiz Report" pop-up window.
 
-<img src="assets/pictures/game.png">
-
-## The Quiz Result Popup Window
-This window shows the final score achieved, and a breakdown of the correct and incorrect answers. The user has the option of clicking the "Play Again" button to try another quiz.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/ResultModal.png">
-
+<img src="https://github.com/Sofski93/Project2/blob/main/assets/pictures/game.png">
 
 # Technologies Used
 The following is a list of the various technologies employed to build this project
@@ -59,41 +53,13 @@ The following is a list of the various technologies employed to build this proje
 # Testing
 
 ## Cross-Browser Testing
-The application was functionally tested across the 3 web browsers, Google Chrome, Microsoft Edge & Mozilla Firefox. The site loaded consistently across all 3 and no issues were detected on any browser.
+The application was functionally tested across the 3 web browsers, Google Chrome, Microsoft Edge & Safari. The site loaded consistently across all 3 and no issues were detected on any browser.
 
 
 ## Responsiveness Testing
 During development of this application, I regularly tested the responsiveness of the site using Google Chrome's Developer tools. In my CSS media query rules, I used 2 separate breakpoints to design the site for different screen sizes.
 + 800px width and below (medium screen size)
 + 600px width and below (small screen size)
-
-### The Intro Page
-The intro page was laid out using full width divs and containers, so the app displays identically across all screen sizes, the only difference being the paddings adjusted and also the label and input box stack on top of each other.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/IntroResponsive.png">
-
-### Game Page - Header
-The header section of the game page changes from a 2 column layout to 1 column on smaller screens, the name and logo stacking on top of the welcome username text.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/HeaderResponsive.png">
-
-### Game Page - Question Panel
-The game panel section changes from a 4 column layout to just 1 column on the smaller screen sizes, the question boxes stacking on top of each other, with some necessary padding/margin/font-size adjustments to suit the viewport.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GamePanelResponsive.png">
-
-### Game Page - Game Controls
-Similar to the previous sections the game controls change from multiple columns to a one column layout on smaller devices. Also, the order of the buttons are reversed, to give a better user experience it was decided that the "Next Question" button should appear above the "Restart" option.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/GameControlsResponsive.png">
-
-### The Quiz Result Popup Window
-The modal window appears identically to the large screen versions, with the results in a table format. Some scrolling had to be undertaken to see all results and access the "New Game" button, but this was unavoidable due to the amount of information needed to be displayed on the modal.
-
-<img src="https://github.com/kevinjohnkiely/quick-quiz-project-2/blob/main/screenshotsWireframes/ResultModalResponsive.png">
-
-## User Testing
-The quiz app website was tested by another person and they found it a pleasant user experience, reporting no usability issues and found it an easy user journey through the game. They reported the question buttons being clearly available to click when they wanted to answer, and quickly found the "Get Result" button when the 10th question was answered.
 
 ### Button Enabling/Disabling
 In order to effectively control the game functions, certain buttons have to be enabled or disabled depending on user interaction. When a question has been loaded, the "next question" button is disabled until the user has clicked an answer. When an answer is clicked the "next question" button is re-enabled, but the question buttons are disabled to disallow the user from having a second chance to answer the question. This process is repeated for all 10 questions.
@@ -104,12 +70,9 @@ The HTML of the website was tested using the validator at https://validator.w3.o
 The CSS was tested using the validator at https://jigsaw.w3.org/css-validator/ and no errors were reported.
 
 ## Performance Testing
-I tested the game's web page performance using Lighthouse in Google Chrome Developer Tools. I was pleased with the results which ranged from 92 to 100. Results are seen below:
+I tested the game's web page performance using Lighthouse in Google Chrome Developer Tools. Results are seen below:
 
 <img src="">
-
-## Errors, Bugs or Issues During Development
-
 
 
 # Deployment
@@ -121,7 +84,7 @@ I tested the game's web page performance using Lighthouse in Google Chrome Devel
 3. On the following page I clicked on the green Gitpod button, which is accessible having installed the Gitpod extension to Google Chrome browser.
 4. This created my development environment on Gitpod where I began to push the incremental changes to the live hosted site.
 5. To create the hosted site at Github Pages, I navigated to the Github repo settings tab and found the Github pages dedicated section.
-6. From there in the Source dropdown menu I clicked on "main", and then "Save", from which I was supplied a live link that would be ready in a few minutes. Live link is available here [https://kevinjohnkiely.github.io/quick-quiz-project-2/]
+6. From there in the Source dropdown menu I clicked on "main", and then "Save", from which I was supplied a live link that would be ready in a few minutes. Live link is available here
 
 
 # Credits
